@@ -1,0 +1,41 @@
+# --- Cœur ---
+Django==5.2.19                 # version LTS (support long terme)
+djangorestframework==3.18.3
+django-tenants==4.0.1          # un schéma PostgreSQL par menuiserie
+psycopg[binary]==3.3.8
+
+# --- Configuration et sécurité ---
+django-environ==0.14.0
+django-cors-headers==4.9.0
+
+# --- Fonctionnalités métier ---
+django-treebeard==7.0.3        # classeurs et sous-classeurs
+django-filter==26.2
+drf-spectacular==0.30.0        # documentation Swagger de l'API
+
+# --- Tâches longues ---
+celery==5.6.3
+redis==8.1.0
+
+# --- Fichiers, étiquettes, PDF ---
+pandas==3.1.1                  # CSV Cabinet Vision
+openpyxl==3.1.5                # import/export Excel
+segno==1.6.6                   # QR codes des chutes
+weasyprint==70.0               # PDF (étiquettes, listes de préparation)
+
+# --- Stockage des fichiers ---
+django-storages==1.14.6
+boto3==1.43.124
+
+# --- Production ---
+gunicorn==26.2.0
+whitenoise==6.12.0
+sentry-sdk[django]==2.73.0
+
+# --- Développement et tests ---
+pytest==9.2.0
+pytest-django==4.14.0
+pytest-cov==7.1.0
+factory-boy==3.3.3
+ruff==0.17.3
+pre-commit==4.7.0
